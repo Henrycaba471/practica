@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Iniciando en Git</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <h1 class="ejercicios-js">Ejercicios JS</h1>
+      <div class="ejercicio-1">
+        <h2 class="uno">Ejercicio 1</h2>
+        <p>
+          Programa una función que cuente el número de caracteres de una cadena
+          de texto, pe. miFuncion("Hola Mundo") devolverá 10.
+        </p>
+        <label for="entrada">Ingrese el texto:</label>
+        <input type="text" id="entrada" /><br />
+        <button type="submit" id="contar1" onclick="contarCaracteres()">
+          Contar Caracteres
+        </button>
+        <button id="clear" type="submit">Clear</button>
+        <span id="resultado">:)</span>
+      </div>
+      <div class="ejercicio-2">
+        <h2 class="dos">Ejercicio 2</h2>
+        <p>
+          Programa una función que te devuelva el texto recortado según el
+          número de caracteres indicados, pe. miFuncion("Hola Mundo", 4)
+          devolverá "Hola"
+        </p>
+        <label for="entrada-recorte">Ingrese el texto:</label>
+        <input type="text" id="entrada-recorte" /><br />
+        <label for="recorte">Recorte:</label>
+        <input type="number" id="recorte" /><br />
+        <button type="submit" id="contar2" onclick="recortarCaracteres()">
+          Recortar Caracteres
+        </button>
+        <button id="clear2" type="submit">Clear</button>
+        <span id="resultado2">:)</span>
+      </div>
+      <div class="ejercicio-3">
+        <h2 class="tres">Ejercicio 3</h2>
+        <p>
+          Programa una función que dada una String te devuelva un Array de
+          textos separados por cierto caracter, pe. miFuncion('hola que tal', '
+          ') devolverá ['hola', 'que', 'tal']
+        </p>
+        <label for="entrada-3">Ingrese el texto:</label>
+        <input type="text" id="entrada-3" /><br />
+        <label for="separador">Separdor:</label>
+        <input type="text" id="separador" /><br />
+        <button type="submit" id="contar3" onclick="cadenaAArreglo()">
+          Convertir a Arreglo
+        </button>
+        <button id="clear3" type="submit">Clear</button>
+        <span id="resultado3">:)</span>
+      </div>
+      <div class="ejercicio-4">
+        <h2 class="cuatro">Ejercicio 4</h2>
+        <p>
+          Programa una función que repita un texto X veces, pe. miFuncion('Hola
+          Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
+        </p>
+        <label for="entrada-4">Ingrese el texto:</label>
+        <input type="text" id="entrada-4" /><br />
+        <label for="repetidor">Numero de veces a Repetir:</label>
+        <input type="number" id="repetidor" /><br />
+        <button type="submit" id="contar4" onclick="repetirTexto()">
+          Repetir
+        </button>
+        <button id="clear4" type="submit">Clear</button>
+        <span id="resultado4">:)</span>
+      </div>
+      <div class="ejercicio-5">
+        <h2 class="cuatro">Ejercicio 5</h2>
+        <p>
+          Programa una función que invierta las palabras de una cadena de texto,
+          pe. miFuncion("Hola Mundo") devolverá "odnuM aloH"
+        </p>
+        <label for="entrada-5">Ingrese el texto:</label>
+        <input type="text" id="entrada-5" /><br />
+        <button type="submit" id="contar5" onclick="invertirTexto()">
+          Invertir
+        </button>
+        <button id="clear5" type="submit">Clear</button><br />
+        <span id="resultado5">:)</span>
+      </div>
+      <div class="ejercicio-6">
+        <h2 class="cuatro">Ejercicio 6</h2>
+        <p>
+          Programa una función para contar el número de veces que se repite una
+          palabra en un texto largo, pe. miFuncion("hola mundo adios mundo",
+          "mundo") devolverá 2
+        </p>
+        <label for="entrada-6" id="ejer6">Ingrese el texto:</label><br />
+        <textarea id="entrada-6"></textarea><br />
+        <label for="pbuscada">Palabra a Buscar:</label>
+        <input type="text" id="pbuscada" /><br />
+        <button type="submit" id="contar6" onclick="buscarPalabra()">
+          Buscar
+        </button>
+        <button id="clear6" type="submit">Clear</button>
+        <span id="resultado6">:)</span>
+      </div>
+      <div class="ejercicio-7">
+        <h2 class="cuatro">Ejercicio 7</h2>
+        <p>
+          Programa una función que valide si una palabra o frase dada, es un
+          palíndromo (que se lee igual en un sentido que en otro), pe.
+          mifuncion("Salas") devolverá true
+        </p>
+        <label for="entrada-7">Ingrese el texto:</label>
+        <input type="text" id="entrada-7" /><br />
+        <button type="submit" id="contar7" onclick="textoPalindromo()">
+          Verificar si es Palindroma
+        </button>
+        <button id="clear7" type="submit">Clear</button><br />
+        <span id="resultado7">:)</span>
+      </div>
+      <div class="ejercicio-8">
+        <h2 class="ocho">Ejercicio 8</h2>
+        <p>
+          Programa una función que elimine cierto patrón de caracteres de un
+          texto dado, pe. miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz")
+          devolverá "1, 2, 3, 4 y 5.
+        </p>
+        <label for="entrada-8">Ingrese el texto:</label>
+        <input type="text" id="entrada-8" /><br />
+        <label for="patron">Patron:</label>
+        <input type="text" id="patron" /><br />
+        <button type="submit" id="contar8" onclick="eliminarPatron()">
+          Patron a Eliminar
+        </button>
+        <button id="clear8" type="submit">Clear</button>
+        <span id="resultado8">:)</span>
+      </div>
+      <div class="ejercicio-9">
+        <h2 class="nueve">Ejercicio 9</h2>
+        <p>
+          Programa una función que obtenga un numero aleatorio entre 501 y 600.
+        </p>
+        <label for="aleatario">Numero Aleatorio</label><br />
+        <h3 id="num__aleatorio">:)</h3>
+        <br />
+        <button type="submit" id="contar9" onclick="numeroAleatorio()">
+          Ver Numero
+        </button>
+        <button id="clear9" type="submit">Clear</button>
+      </div>
+      <div class="ejercicio-10">
+        <h2 class="cuatro">Ejercicio 10</h2>
+        <p>
+          Programa una función que reciba un número y evalúe si es capicúa o no
+          (que se lee igual en un sentido que en otro), pe. miFuncion(2002)
+          devolverá true.
+        </p>
+        <label for="entrada-10">Ingrese el número:</label>
+        <input type="number" id="entrada-10" /><br />
+        <button type="submit" id="contar10" onclick="numeroCapicua()">
+          Verificar si es Capicúa
+        </button>
+        <button id="clear10" type="submit">Clear</button><br />
+        <span id="resultado10">:)</span>
+      </div>
+      <div class="ejercicio-11">
+        <h2 class="once">Ejercicio 11</h2>
+        <p>
+          Programa una función que calcule el factorial de un número (El
+          factorial de un entero positivo n, se define como el producto de todos
+          los números enteros positivos desde 1 hasta n), pe. miFuncion(5)
+          devolverá 120.
+        </p>
+        <label for="entrada-11">Ingrese el número:</label>
+        <input type="number" id="entrada-11" /><br />
+        <button type="submit" id="contar11" onclick="calcFactorial()">
+          Calcular Factorial
+        </button>
+        <button id="clear11" type="submit">Clear</button>
+        <span id="resultado11">:)</span>
+      </div>
+      <div class="ejercicio-12">
+        <h2 class="once">Ejercicio 12</h2>
+        <p>
+          Programa una función que determine si un número es primo (aquel que
+          solo es divisible por sí mismo y 1) o no, pe. miFuncion(7) devolverá
+          true
+        </p>
+        <label for="entrada-12">Ingrese el número:</label>
+        <input type="number" id="entrada-12" /><br />
+        <button type="submit" id="contar12" onclick="numeroPrimo()">
+          Numero Primo
+        </button>
+        <button id="clear12" type="submit">Clear</button>
+        <span id="resultado12">:)</span>
+      </div>
+      <div class="ejercicio-13">
+        <h2 class="once">Ejercicio 13</h2>
+        <p>
+          Programa una función que determine si un número es par o impar, pe.
+          miFuncion(29) devolverá Impar.
+        </p>
+        <label for="entrada-13">Ingrese el número:</label>
+        <input type="number" id="entrada-13" /><br />
+        <button type="submit" id="contar13" onclick="numeroParImpar()">
+          Numero Par o Impar
+        </button>
+        <button id="clear13" type="submit">Clear</button>
+        <span id="resultado13">:)</span>
+      </div>
+      <div class="ejercicio-14">
+        <h2 class="dos">Ejercicio 14</h2>
+        <p>
+          Programa una función para convertir grados Celsius a Fahrenheit y
+          viceversa, pe. miFuncion(0,"C") devolverá 32°F.
+        </p>
+        <label for="entrada-14">Ingrese los Grados:</label>
+        <input type="number" id="entrada-14" /><br />
+        <label for="grados">Tipo de Grados:</label>
+        <input type="text" id="tipoGrados" /><br />
+        <button type="submit" id="contar14" onclick="convertirGrados()">
+          Convertir Grados
+        </button>
+        <button id="clear14" type="submit">Clear</button>
+        <span id="resultado14">:)</span>
+      </div>
+      <div class="ejercicio-15">
+        <h2 class="dos">Ejercicio 15</h2>
+        <p>
+          Programa una función para convertir números de base binaria a decimal y viceversa, pe. miFuncion(100,2) devolverá 4 base 10.
+        </p>
+        <label for="entrada-15">Ingrese Numero:</label>
+        <input type="number" id="entrada-15" /><br />
+        <label for="base">Base:</label>
+        <input type="number" id="base" /><br />
+        <button type="submit" id="contar15" onclick="decimalBinario()">
+          Convertir Decimal - Binario
+        </button>
+        <button id="clear15" type="submit">Clear</button>
+        <span id="resultado15">:)</span>
+      </div>
+      <div class="ejercicio-16">
+        <h2 class="dos">Ejercicio 16</h2>
+        <p>
+          Programa una función que devuelva el monto final después de aplicar un descuento a una cantidad dada, pe. miFuncion(1000, 20) devolverá 800.
+        </p>
+        <label for="entrada-16">Precio: $</label>
+        <input type="number" id="entrada-16" /><br />
+        <label for="descuento">Descuento: %</label>
+        <input type="number" id="descuento" /><br />
+        <button type="submit" id="contar16" onclick="aplicarDescuento()">
+          Aplicar Descuento
+        </button>
+        <button id="clear16" type="submit">Clear</button>
+        <span id="resultado16">:)</span>
+      </div>
+      <div class="ejercicio-17">
+        <h2 class="once">Ejercicio 17</h2>
+        <p>
+          Programa una función que dada una fecha válida determine cuantos años han pasado hasta el día de hoy, pe. miFuncion(new   Date(1984,4,23)) devolverá 35 años (en 2020)
+        </p>
+        <label for="entrada-17">Ingrese La Fecha:</label>
+        <input type="date" id="entrada-17" /><br />
+        <button type="submit" id="contar17" onclick="calcularAnios()">
+          Calcular Años
+        </button>
+        <button id="clear17" type="submit">Clear</button>
+        <span id="resultado17">:)</span>
+      </div>
+      <div class="ejercicio-18">
+        <h2 class="once">Ejercicio 18</h2>
+        <p>
+          Programa una función que dada una cadena de texto cuente el número de vocales y consonantes, pe. miFuncion("Hola Mundo")devuelva Vocales: 4, Consonantes: 5.
+        </p>
+        <label for="entrada-18">Ingrese el Texto:</label><br>
+        <textarea id="entrada-18"></textarea><br />
+        <button type="submit" id="contar18" onclick="contarConsoVocales()">
+          Realizar Conteo
+        </button>
+        <button id="clear18" type="submit">Clear</button>
+        <span id="resultado18">:)</span>
+      </div>
+      <div class="ejercicio-19">
+        <h2 class="once">Ejercicio 19</h2>
+        <p>
+          Programa una función que valide que un texto sea un nombre válido, pe. miFuncion("Jonathan MirCha") devolverá verdadero
+        </p>
+        <label for="entrada-19">Ingrese el nombre:</label>
+        <input type="text" id="entrada-19" /><br />
+        <button type="submit" id="contar19" onclick="validarNombre()">
+          Validar nombre
+        </button>
+        <button id="clear19" type="submit">Clear</button>
+        <span id="resultado19">:)</span>
+      </div>
+      <div class="ejercicio-20">
+        <h2 class="once">Ejercicio 20</h2>
+        <p>
+          Programa una función que valide que un texto sea un email válido, pe. miFuncion("jonmircha@gmail.com") devolverá verdadero
+        </p>
+        <label for="entrada-20">Ingrese el Correo:</label>
+        <input type="text" id="entrada-20" /><br />
+        <button type="submit" id="contar20" onclick="validarEmail()">
+          Validar Correo
+        </button>
+        <button id="clear20" type="submit">Clear</button>
+        <span id="resultado20">:)</span>
+      </div>
+      <div class="ejercicio-21">
+        <h2 class="once">Ejercicio 21</h2>
+        <p>
+          Programa una función que dado un array numérico devuelve otro array con los números elevados al cuadrado, pe. mi_funcion([1, 4, 5]) devolverá [1, 16, 25]
+        </p>
+        <label for="entrada-21">Ingrese los números:</label>
+        <input type="text" id="entrada-21" /><br />
+        <button type="submit" id="contar21" onclick="elevarNumeros()">
+          Elevar Números ^2
+        </button>
+        <button id="clear21" type="submit">Clear</button>
+        <span id="resultado21">:)</span>
+      </div>
+      <div class="ejercicio-22">
+        <h2 class="once">Ejercicio 22</h2>
+        <p>
+          Programa una función que dado un array devuelva el número mas alto y el más bajo de dicho array, pe. miFuncion([1, 4, 5, 99, -60]) devolverá [99, -60]
+        </p>
+        <label for="entrada-22">Ingrese los números:</label>
+        <input type="text" id="entrada-22" /><br />
+        <button type="submit" id="contar22" onclick="mayorMenorNumeros()">
+          Buscar Mayor - Menor
+        </button>
+        <button id="clear22" type="submit">Clear</button>
+        <span id="resultado22">:)</span>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
